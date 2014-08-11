@@ -158,24 +158,25 @@
       For the most part, human civilizations use a base-10 numbering system (decimal). This means 
       that they count with 10 symbols:<br>
       <br>
-      0, 1, 2, 3, 4, 5, 6, 7, 8, and 9<br>
+      <center>0, 1, 2, 3, 4, 5, 6, 7, 8, and 9</center><br>
       <br>
       After 9, another place value is added.<br>
       <br>
-      <u>1</u>0<sub>10</sub></sub><br>
+      <center><u>1</u>0<sub>10</sub></sub></center><br>
       <br>
       Place values can also be thought of as exponents, where the one's place is represented as 
       10<sup>0</sup>, the ten's place is 10<sup>1</sup>, the one-hundred's place as 10<sup>2</sup>, etc.<br>
       <br>
       Computers use a base-2 numbering system (binary) because transistors (and the much older tubes) have two states, 
-      off and on, which can be represented by 0 and 1, respectively. After 1, another place value is added.<br>
+      off and on, which can be represented by 0 and 1, respectively. After 1, another place value is added. In 
+      computing terms, each place value is a bit.<br>
       <br>
-      <u>1</u>0<sub>2</sub></sub><br>
+      <center><u>1</u>0<sub>2</sub></sub></center><br>
       <br>
       Like with base-10, each place value can be thought of as exponents, where the first place is represented as 
       2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the 
-      fourth as 2<sup>3</sup>, etc. Because a byte is only eight place values we really only need to know up to 
-      2<sup>7</sup>, or 128 (more on this later).<br>
+      fourth as 2<sup>3</sup>, etc. Because a byte is only eight place values or bits, we really only need to know up 
+      to 2<sup>7</sup>, or 128 (more on this later).<br>
       <br>
       With this information, converting between binary and decimal is fairly straight forward. 
       Converting from binary to decimal is as simple as basic addition.<br>
@@ -184,13 +185,13 @@
       to its equivilent exponent and then added together to get the decimal equivilant. So, from left to right, 
       8 in the first place value, nothing in the second, 2 in the third, and 1 in the fourth.<br>
       <br>
-      1011<sub>2</sub> = 8<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> + 1<sub>10</sub> = 
-      11<sub>10</sub><br>
+      <center>1011<sub>2</sub> = 8<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> + 1<sub>10</sub> = 
+      11<sub>10</sub></center><br>
       <br>
       As another example:<br>
       <br>
-      100011<sub>2</sub> = 32<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> + 
-      1<sub>10</sub> = 35<sub>10</sub><br>
+      <center>100011<sub>2</sub> = 32<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> 
+      + 1<sub>10</sub> = 35<sub>10</sub></center><br>
       <br>
       Converting from decimal to binary requires a bit more thought, but still just basic arithmetic. This time we'll
       be subtracting while using base-2 place value exponents as a checklist.<br>
@@ -199,14 +200,14 @@
       8<sub>10</sub>. This leaves 5<sub>10</sub> which contains 2<sup>2</sup> (4<sub>10</sub>) and leaves only 
       1. As such, we can convert these exponents to 1101.<br>
       <br>
-      13<sub>10</sub> = 2<sup>3</sup> or 8<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 2<sup>0</sup> or 1 = 
-      1101<sub>2</sub><br>
+      <center>13<sub>10</sub> = 2<sup>3</sup> or 8<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 2<sup>0</sup> or 
+      1 = 1101<sub>2</sub></center><br>
       <br>
       As another example:<br>
       <br>
-      213<sub>10</sub> = 2<sup>7</sup> or 128<sub>10</sub> + 2<sup>6</sup> or 64<sub>10</sub> + 2<sup>4</sup> or 
-      16<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 1 = 11010101<sub>2</sub>
-      
+      <center>213<sub>10</sub> = 2<sup>7</sup> or 128<sub>10</sub> + 2<sup>6</sup> or 64<sub>10</sub> + 2<sup>4</sup> 
+      or 16<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 1 = 11010101<sub>2</sub></center><br>
+      <br>
         
         
       </div>
