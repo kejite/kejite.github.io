@@ -174,13 +174,14 @@
       <br>
       Like with base-10, each place value can be thought of as exponents, where the first place is represented as 
       2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the 
-      fourth as 2<sup>3</sup>, etc.<br>
+      fourth as 2<sup>3</sup>, etc. Because a byte is only eight place values we really only need to know up to 
+      2<sup>7</sup>, or 128 (more on this later).<br>
       <br>
       With this information, converting between binary and decimal is fairly straight forward. 
       Converting from binary to decimal is as simple as basic addition.<br>
       <br>
       For example, let's look at the value 1011<sub>2</sub>. Every place value that contains a 1 can be converted 
-      to its exponent and then added together to get the decimal equivilant. So, from left to right, 
+      to its equivilent exponent and then added together to get the decimal equivilant. So, from left to right, 
       8 in the first place value, nothing in the second, 2 in the third, and 1 in the fourth.<br>
       <br>
       1011<sub>2</sub> = 8<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> + 1<sub>10</sub> = 
@@ -191,9 +192,8 @@
       100011<sub>2</sub> = 32<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> + 
       1<sub>10</sub> = 35<sub>10</sub><br>
       <br>
-      Converting from decimal to binary is a bit more complicated, but still just basic arithmetic. This time we'll
-      be subtracting while using base-2 place value exponents as a checklist. Because a byte is only eight place values
-      we only need to know up to 2<sup>7</sup>, or 128.<br>
+      Converting from decimal to binary requires a bit more thought, but still just basic arithmetic. This time we'll
+      be subtracting while using base-2 place value exponents as a checklist.<br>
       <br>
       For example, 13<sub>10</sub>. The first exponent that can go into 13<sub>10</sub> is 2<sup>3</sup>, or 
       8<sub>10</sub>. This leaves 5<sub>10</sub> which contains 2<sup>2</sup> (4<sub>10</sub>) and leaves only 
@@ -203,7 +203,8 @@
       <br>
       As another example:<br>
       <br>
-      213<sub>10</sub> = 
+      213<sub>10</sub> = 2<sup>7</sup> or 128<sub>10</sub> + 2<sup>6</sup> or 64<sub>10</sub> + 2<sup>4</sup> or 
+      16<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 1 = 11010101<sub>2<</sub>
       
         
         
