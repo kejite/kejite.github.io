@@ -174,9 +174,9 @@
       <center><u>1</u>0<sub>2</sub></sub></center><br>
       <br>
       Like with base-10, each place value can be thought of as exponents, where the first place is represented as 
-      2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the 
-      fourth as 2<sup>3</sup>, etc. Because a byte is only eight place values or bits, we really only need to know up 
-      to 2<sup>7</sup>, or 128 (more on this later).<br>
+      2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the fourth as 2<sup>3</sup>, etc. 
+      Because a byte is only eight place values or bits, we really only need to know up to 2<sup>7</sup>, or 128 
+      (more on this later).<br>
       <br>
       With this information, converting between binary and decimal is fairly straight forward. 
       Converting from binary to decimal is as simple as basic addition.<br>
@@ -208,8 +208,22 @@
       <center>213<sub>10</sub> = 2<sup>7</sup> or 128<sub>10</sub> + 2<sup>6</sup> or 64<sub>10</sub> + 2<sup>4</sup> 
       or 16<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 1 = 11010101<sub>2</sub></center><br>
       <br>
-      A long stream of 1's and 0's is difficult to work with, however. Thankfully, we can use another number system 
-      to make strings of binary easier to work with.
+      A long stream of 1's and 0's is difficult to work with, however. Thankfully, we can use another base-16 number system 
+      (hexadecimal) to make strings of binary easier to work with. As a base-16 numbering system, hexadeximal uses 16 
+      characters to count.<br>
+      <br>
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F<br>
+      <br>
+      What makes hexadecimal easy is that, like with binary, each place value can be expressed as an exponent of 2, with the 
+      first place value in hexadecimal being 2<sup>0</sup>, the second being 2<sup>4</sup>, the third being 2<sup>8</sup>, and 
+      so on. This corresponds to every four place values in binary being equal to a single place value in hexadecimal. As such 
+      we just need to break the binary number up into four-bit chunks, figure out what that chunk is in decimal, and then 
+      match that to the corresponding hexadecimal character.<br>
+      <br>
+      For example, 1110<sub>2</sub> is the equivilant of 14<sub>10</sub> which is the equivilant of E<sub>16</sub>.<br>
+      <br>
+      As another longer example, 10110010<sub>2</sub> can be broken into two chunks, 1011<sub>2</sub> and 0010<sub>2</sub>, 
+      which are 11<sub>10</sub> and 2<sub>10</sub>, respectively, giving us the hexadecimal number B2<sub>16</sub>.
         
         
       </div>
