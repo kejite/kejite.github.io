@@ -236,7 +236,24 @@
       2<sup>4</sup> place value and the second value, D<sub>16</sub>, occupies the 2<sup>0</sup> place value. Thus:<br>
       <br>
       <center>CD<sub>16</sub> = 12<sub>10</sub> * 2<sup>4</sup> + 13<sub>10</sub> * 2<sup>0</sup> = 192<sub>10</sub> + 
-      13<sub>10</sub> = 205<sub>10</sub></center>
+      13<sub>10</sub> = 205<sub>10</sub></center><br>
+      <br>
+      To convert decimal to hexadecimal, we just need to divide repeatedly by 16, making note of whatever the remainder may 
+      be, until a quotient less than 16 is reached. The remainders and final quotient are switched to their hexadecimal 
+      equivilants, then arranged in the order they were found, with the last quotient being in the last place. This number 
+      is then reversed, resulting in the final hexadecimal number.<br>
+      <br>
+      For example: 4879<sub>10</sub><br>
+      <br>
+      <center>4879 / 16 = 304 with a remainder of 15<sub>10</sub> or F<sub>16</sub></center><br>
+      <br>
+      <center>304 / 16 = 19 with a remainder of 0</center><br>
+      <br>
+      <center> 19 / 16 = 1 with a remainder of 3</center><br>
+      <br>
+      <center>F 0 3 1</center><br>
+      <br>
+      <center>Thus: 4879<sub>10</sub> = 130F<sub>16></sub></center>
       
         
         
