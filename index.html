@@ -8,301 +8,285 @@
       background:#F2F2F2;
       font-family:"calibri";
     }
-    #header{
-      background:#D470A2;
+    #topbar{
+      background-color:#D470A2;
       width:100%;
-      height: 100px;
+      height: 75px;
       position:fixed;
       padding:5px;
       margin:0px;
-      z-index:999;
     }
-    #container{
-      display:table;
-      width:100%;
-      height:100%;
-    }
-    #row{
-      display:table-row;
-    }
-    #left,
-    #center,
-    #right{
-      display:table-cell;
-      padding:20px;
-    }
-    #left,
-    #right{
+    
+    #sidebar{
       width:100px;
-      background:#F5A9BC;
+      height:100%;
+      position:fixed;
+      margin:0px;
+      text-align:center;
+      background-color:#F5A9BC;
     }
-    #center{
+    
+    #content{
+      float:right;
       background:#F2F2F2;
-      border-right:solid 20px #F2F2F2;
-      border-left:solid 20px #F2F2F2;
     }
+    
     </style>
+
 </head>
 
 <body>
-  <div id="header">
+  
+  <div id="topbar">
   <h2>&nbsp;&nbsp;They Don't Byte: Basic Computer Information</h2>
   </div>
   
   <!-- PC Part Picker <$2500 build http://pcpartpicker.com/p/LJcxxr -->
   
-  <div id="container">
-    <div id="row">
-      <div id="right">
-      &nbsp;&nbsp;<b>Menu</b><br>
-      &nbsp;&nbsp;&nbsp;Chapter 1<br>
-      &nbsp;&nbsp;&nbsp;Chapter 2<br>
-      &nbsp;&nbsp;&nbsp;Chapter 3<br>
-      &nbsp;&nbsp;&nbsp;Chapter 4<br>
-      &nbsp;&nbsp;&nbsp;Chapter 5<br>
-      &nbsp;&nbsp;&nbsp;Chapter 6<br>
-      &nbsp;&nbsp;&nbsp;Bonus
-      </div>
-  
-      <div id="center">
-      <p>Computers are fancy and that can be overwhelming. For many they're just a magic box that 
-      does the email and the Facebooks. However, when broken down they're actually not that difficult to understand. 
-      Hopefully this can help explain some things following the chapter layout of Scott Meuller's 
-      <i>Upgrading and Repairing PCs - 21st Edition.</i></p><br>
-  
-      <b>Chapter 1 - Basic History</b><br>
-      [PH Text]Computers are pretty old. That's cool.<br>
-      <br>
-  
-      <b>Chapter 2 - Component Overview</b><br>
-      A computer is comprised of many individual parts which can be split into two categories, 
-      hardware and software. Hardware is the physical components and software is purely digital.<br>
-      <br>
-      Hardware consists of:<br>
-      <table style="width:900px">
-        <tr>
-          <td>Processor</td>
-          <td>Performs the calculations that the PC needs in order to do anything.</td>
-        </tr>
-        <tr>
-          <td>Motherboard</td>
-          <td>Connects all components of the PC together.</td>
-        </tr>
-        <tr>
-          <td>Memory (RAM)</td>
-          <td>Temporarily stores information that the processor needs.</td>
-        </tr>
-        <tr>
-          <td>Hard Drive</td>
-          <td>Permanently stores all information on the system.</td>
-        <tr>
-          <td>Optical Drive</td>
-          <td>Allows the system to read removable information stored on CDs, DVDs, or Blu-Ray discs.</td>
-        </tr>
-        <tr>
-          <td>Power Supply</td>
-          <td>Provides power to system.</td>
-        </tr>
-        <tr>
-          <td>Graphics Card*</td>
-          <td>Specialized additional processor that specifically handles complex visuals.</td>
-        </tr>
-        <tr>
-          <td>Sound Card*</td>
-          <td>Specialized additional processor that specifically handles complex audio.</td>
-        </tr>
-        <tr>
-          <td>Network Card*</td>
-          <td>Allows the computer to connect to a network either through a wired or wireless connection.</td>
-        </tr>
-        <tr>
-          <td>Case</td>
-          <td>Holds all components in place.</td>
-        </tr>
-        <tr>
-          <td>Monitor</td>
-          <td>Displays the computer's interface.</td>
-        </tr>
-        <tr>
-          <td>Keyboard/Mouse</td>
-          <td>Allows the user to interact with the computer and input commands.</td>
-        </tr>
-      </table>
-      <i>*These components are “optional” in the sense that a basic version 
-      sometimes comes attached to the motherboard or processor.</i><br>
-      <br>
-  
-      Software consists of:<br>
-      <table style="width:575px">
-       <tr>
-         <td>BIOS</td>
-        <td>The most basic, default software on the computer.</td>
-        </tr>
-        <tr>
-          <td>Operating System</td>
-          <td>Serves as a link between hardware and programs.</td>
-        </tr>
-      </table>
-      &nbsp;Any programs installed by the user.<br>
-      <br>
-  
-      <b>Chapter 3 - Processors</b><br>
-      [PH Text]Stuff about processors. There's a lot of stuff so this is just very basic stuff.<br>
-      <br>
-  
-      <b>Chapter 4 - Motherboards</b><br>
-      The motherboard is a circuit board that connects all of the various components of they system together.
-      Included on the motherboard are:<br>
-      <ul>
-        <li>The socket for the processor</li>
-        <li>Northbridge and Southbridge chips</li>
-        <li>The BIOS chip(s) and battery</li>
-        <li>DIMM slots for memory sticks</li>
-        <li>Expansion slots for things like video, sound, and network cards</li>
-        <li>The socket for the hard disk drive or solid state drive</li>
-        <li>The socket for the power supply</li>
-        <li>The socket for the optical drive</li>
-        <li>The socket(s) for the fan(s)
-        <li>Various input/output ports including USB, audio, video, and ethernet</li>
-      </ul>
-      Motherboards come in a variety of different sizes which are, ordered from largest to smallest, the ATX, microATX,
-      FlexATX, and Mini-ITX. These sizes dictate what size case can be used, with anything being able to fit in a case designed
-      for a full-sized ATX board but with a case designed for a Mini-ITX only being able to use a Mini-ITX board.
-      As long as the motherboard is not too large, any board size can fit into an appropriate case because all standard 
-      motherboards attach to the case via the same layout of screws.<br>
-      <br>
-  
-      <b>Chapter 5 - BIOS</b><br>
-      BIOS, which stands for Basic Input/Output System and is also known as device drivers or just drives, is the software 
-      that serves as the bridge between the hardware and the operating system. When the computer is powered on, BIOS is what 
-      gives the processor its first instructions, checks that all components are functioning (Power On Start Test or POST), 
-      allowing the operating system to be loaded and take over.<br>
-      Physically, BIOS is stored on a chip of non-volatile read-only memory (more on this in the next chapter) attached 
-      directly to the motherboard. It is important and perhaps counter-intuitive to note that while the BIOS itself has a 
-      manufacturer, any updates or upgrades must be gotten through the manufacturer of the motherboard. This is because 
-      the BIOS chip runs a custom version designed to run specifically with that motherboard.<br>
-      <br>
-      
-      <b>Chapter 6 - Memory</b><br>
-      Memory is what holds onto data and comes in a variety of different types. The first important distinction is whether or 
-      not that memory is volatile or non-volatile. Volatile memory dumps all data when it loses power, such as caches and main 
-      memory sticks, while non-volatile memory holds onto it despite being the lack of power, such as flash memory and hard 
-      drives. <br>
-      <br>
-  
-      <b>Bonus Section - Binary and Hexadecimal</b><br>
-      Many people already know that information used by computers is, "a bunch of 1's and 0's," 
-      but what, exactly, does that mean?<br>
-      <br>
-      Firstly, an explanation of a number system that you probably already know.<br>
-      <br>
-      For the most part, human civilizations use a base-10 numbering system (decimal). This means 
-      that they count with 10 symbols:<br>
-      <br>
-      <center>0, 1, 2, 3, 4, 5, 6, 7, 8, and 9</center><br>
-      <br>
-      After 9, another place value is added.<br>
-      <br>
-      <center><u>1</u>0<sub>10</sub></sub></center><br>
-      <br>
-      Place values can also be thought of as exponents, where the one's place is represented as 
-      10<sup>0</sup>, the ten's place is 10<sup>1</sup>, the one-hundred's place as 10<sup>2</sup>, etc.<br>
-      <br>
-      Computers use a base-2 numbering system (binary) because transistors (and the much older tubes) have two states, 
-      off and on, which can be represented by 0 and 1, respectively. After 1, another place value is added. In 
-      computing terms, each place value is a bit.<br>
-      <br>
-      <center><u>1</u>0<sub>2</sub></sub></center><br>
-      <br>
-      Like with base-10, each place value can be thought of as exponents, where the first place is represented as 
-      2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the fourth as 2<sup>3</sup>, etc. 
-      Because a byte is only eight place values or bits, we really only need to know up to 2<sup>7</sup>, or 128.<br>
-      <br>
-      With this information, converting between binary and decimal is fairly straight forward. 
-      Converting from binary to decimal is as simple as basic addition.<br>
-      <br>
-      For example, let's look at the value 1011<sub>2</sub>. Every place value that contains a 1 can be converted 
-      to its equivilent exponent and then added together to get the decimal equivilant. So, from left to right, 
-      8 in the first place value, nothing in the second, 2 in the third, and 1 in the fourth.<br>
-      <br>
-      <center>1011<sub>2</sub> = 8<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> + 1<sub>10</sub> = 
-      11<sub>10</sub></center><br>
-      <br>
-      As another example:<br>
-      <br>
-      <center>100011<sub>2</sub> = 32<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> 
-      + 1<sub>10</sub> = 35<sub>10</sub></center><br>
-      <br>
-      Converting from decimal to binary requires a bit more thought, but still just basic arithmetic. This time we'll
-      be subtracting while using base-2 place value exponents as a checklist.<br>
-      <br>
-      For example, 13<sub>10</sub>. The first exponent that can go into 13<sub>10</sub> is 2<sup>3</sup>, or 
-      8<sub>10</sub>. This leaves 5<sub>10</sub> which contains 2<sup>2</sup> or 4<sub>10</sub> and leaves only 
-      1. As such, we can convert these exponents to 1101.<br>
-      <br>
-      <center>13<sub>10</sub> = 2<sup>3</sup> or 8<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 2<sup>0</sup> or 
-      1 = 1101<sub>2</sub></center><br>
-      <br>
-      As another example:<br>
-      <br>
-      <center>213<sub>10</sub> = 2<sup>7</sup> or 128<sub>10</sub> + 2<sup>6</sup> or 64<sub>10</sub> + 2<sup>4</sup> 
-      or 16<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 1 = 11010101<sub>2</sub></center><br>
-      <br>
-      A long stream of 1's and 0's is difficult to work with, however. Thankfully, we can use another base-16 number system 
-      (hexadecimal) to make strings of binary easier to work with. As a base-16 numbering system, hexadeximal uses 16 
-      characters to count.<br>
-      <br>
-      <center>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</center><br>
-      <br>
-      What makes hexadecimal easy is that, like with binary, each place value can be expressed as an exponent of 2, with the 
-      first place value in hexadecimal being 2<sup>0</sup>, the second being 2<sup>4</sup>, the third being 2<sup>8</sup>, and 
-      so on. This corresponds to every four place values in binary being equal to a single place value in hexadecimal. As such 
-      we just need to break the binary number up into four-bit chunks, figure out what that chunk is in decimal, and then 
-      match that to the corresponding hexadecimal character.<br>
-      <br>
-      For example, 1110<sub>2</sub> is the equivilant of 14<sub>10</sub> which is the equivilant of E<sub>16</sub>.<br>
-      <br>
-      As another longer example, 10110010<sub>2</sub> can be broken into two chunks, 1011<sub>2</sub> and 0010<sub>2</sub>, 
-      which are 11<sub>10</sub> and 2<sub>10</sub>, respectively, giving us the hexadecimal number B2<sub>16</sub>.<br>
-      <br>
-      We can go in reverse just as easily.<br>
-      <center>CD<sub>16</sub> = 12<sub>10</sub> | 13<sub>10</sub> = 1100<sub>2</sub> | 1101<sub>2</sub> = 11001101<sub>2</sub>
-      </center><br>
-      <br>
-      Note: While we use base-10 numbers to easily convert hexadecimal to binary, those base-10 numbers are just placeholders 
-      and are not the solution to converting hexadecimal to decimal (i.e. CD<sub>16</sub> is not equal to 1213<sub>10</sub>). 
-      However, they are still the first step to converting to decimal. The second step is to multiply each value by its 
-      respective place value exponent. So in the example of CD<sub>16</sub>, the first value, C<sub>16</sub>, occupies the 
-      2<sup>4</sup> place value and the second value, D<sub>16</sub>, occupies the 2<sup>0</sup> place value. Thus:<br>
-      <br>
-      <center>CD<sub>16</sub> = 12<sub>10</sub> * 2<sup>4</sup> + 13<sub>10</sub> * 2<sup>0</sup> = 192<sub>10</sub> + 
-      13<sub>10</sub> = 205<sub>10</sub></center><br>
-      <br>
-      To convert decimal to hexadecimal, we just need to divide repeatedly by 16, making note of whatever the remainder may 
-      be, until a quotient less than 16 is reached. The remainders and final quotient are switched to their hexadecimal 
-      equivilants, then arranged in the order they were found, with the last quotient being in the last place. This number 
-      is then reversed, resulting in the final hexadecimal number.<br>
-      <br>
-      For example: 4879<sub>10</sub><br>
-      <br>
-      <center>4879 / 16 = 304 with a remainder of 15<sub>10</sub> or F<sub>16</sub></center><br>
-      <br>
-      <center>304 / 16 = 19 with a remainder of 0</center><br>
-      <br>
-      <center> 19 / 16 = 1 with a remainder of 3</center><br>
-      <br>
-      <center>F 0 3 1</center><br>
-      <br>
-      <center>Thus: 4879<sub>10</sub> = 130F<sub>16</sub></center><br>
-      <br>
-      Alternatively, you can just set a calculator to programmer mode and switch between the different bases with ease, 
-      completely ignoring everything that's been said here.
-      
-        
-        
-      </div>
-    </div>
+  <div id="sidebar">
+    <b>Menu</b><br>
+    Chapter 1<br>
+    Chapter 2<br>
+    Chapter 3<br>
+    Chapter 4<br>
+    Chapter 5<br>
+    Chapter 6<br>
+    Bonus
   </div>
   
+  <div id="content">
+    <p>Computers are fancy and that can be overwhelming. For many they're just a magic box that 
+    does the email and the Facebooks. However, when broken down they're actually not that difficult to understand. 
+    Hopefully this can help explain some things following the chapter layout of Scott Meuller's 
+    <i>Upgrading and Repairing PCs - 21st Edition.</i></p><br>
+  
+    <b>Chapter 1 - Basic History</b><br>
+    [PH Text]Computers are pretty old. That's cool.<br>
+    <br>
+  
+    <b>Chapter 2 - Component Overview</b><br>
+    A computer is comprised of many individual parts which can be split into two categories, 
+    hardware and software. Hardware is the physical components and software is purely digital.<br>
+    <br>
+    Hardware consists of:<br>
+    <table style="width:900px">
+      <tr>
+        <td>Processor</td>
+        <td>Performs the calculations that the PC needs in order to do anything.</td>
+      </tr>
+      <tr>
+        <td>Motherboard</td>
+        <td>Connects all components of the PC together.</td>
+      </tr>
+      <tr>
+        <td>Memory (RAM)</td>
+        <td>Temporarily stores information that the processor needs.</td>
+      </tr>
+      <tr>
+        <td>Hard Drive</td>
+        <td>Permanently stores all information on the system.</td>
+      <tr>
+        <td>Optical Drive</td>
+        <td>Allows the system to read removable information stored on CDs, DVDs, or Blu-Ray discs.</td>
+      </tr>
+      <tr>
+        <td>Power Supply</td>
+        <td>Provides power to system.</td>
+      </tr>
+      <tr>
+        <td>Graphics Card*</td>
+        <td>Specialized additional processor that specifically handles complex visuals.</td>
+      </tr>
+      <tr>
+        <td>Sound Card*</td>
+        <td>Specialized additional processor that specifically handles complex audio.</td>
+      </tr>
+      <tr>
+        <td>Network Card*</td>
+        <td>Allows the computer to connect to a network either through a wired or wireless connection.</td>
+      </tr>
+      <tr>
+        <td>Case</td>
+        <td>Holds all components in place.</td>
+      </tr>
+      <tr>
+        <td>Monitor</td>
+        <td>Displays the computer's interface.</td>
+      </tr>
+      <tr>
+        <td>Keyboard/Mouse</td>
+        <td>Allows the user to interact with the computer and input commands.</td>
+      </tr>
+    </table>
+    <i>*These components are “optional” in the sense that a basic version 
+    sometimes comes attached to the motherboard or processor.</i><br>
+    <br>
+  
+    Software consists of:<br>
+    <table style="width:575px">
+     <tr>
+       <td>BIOS</td>
+      <td>The most basic, default software on the computer.</td>
+      </tr>
+      <tr>
+        <td>Operating System</td>
+        <td>Serves as a link between hardware and programs.</td>
+      </tr>
+    </table>
+    &nbsp;Any programs installed by the user.<br>
+    <br>
+        <b>Chapter 3 - Processors</b><br>
+    [PH Text]Stuff about processors. There's a lot of stuff so this is just very basic stuff.<br>
+    <br>
+  
+    <b>Chapter 4 - Motherboards</b><br>
+    The motherboard is a circuit board that connects all of the various components of they system together.
+    Included on the motherboard are:<br>
+    <ul>
+      <li>The socket for the processor</li>
+      <li>Northbridge and Southbridge chips</li>
+      <li>The BIOS chip(s) and battery</li>
+      <li>DIMM slots for memory sticks</li>
+      <li>Expansion slots for things like video, sound, and network cards</li>
+      <li>The socket for the hard disk drive or solid state drive</li>
+      <li>The socket for the power supply</li>
+      <li>The socket for the optical drive</li>
+      <li>The socket(s) for the fan(s)
+      <li>Various input/output ports including USB, audio, video, and ethernet</li>
+    </ul>
+    Motherboards come in a variety of different sizes which are, ordered from largest to smallest, the ATX, microATX,
+    FlexATX, and Mini-ITX. These sizes dictate what size case can be used, with anything being able to fit in a case designed
+    for a full-sized ATX board but with a case designed for a Mini-ITX only being able to use a Mini-ITX board.
+    As long as the motherboard is not too large, any board size can fit into an appropriate case because all standard 
+    motherboards attach to the case via the same layout of screws.<br>
+    <br>
+  
+    <b>Chapter 5 - BIOS</b><br>
+    BIOS, which stands for Basic Input/Output System and is also known as device drivers or just drives, is the software 
+    that serves as the bridge between the hardware and the operating system. When the computer is powered on, BIOS is what 
+    gives the processor its first instructions, checks that all components are functioning (Power On Start Test or POST), 
+    allowing the operating system to be loaded and take over.<br>
+    Physically, BIOS is stored on a chip of non-volatile read-only memory (more on this in the next chapter) attached 
+    directly to the motherboard. It is important and perhaps counter-intuitive to note that while the BIOS itself has a 
+    manufacturer, any updates or upgrades must be gotten through the manufacturer of the motherboard. This is because 
+    the BIOS chip runs a custom version designed to run specifically with that motherboard.<br>
+    <br>
+    
+    <b>Chapter 6 - Memory</b><br>
+    Memory is what holds onto data and comes in a variety of different types. The first important distinction is whether or 
+    not that memory is volatile or non-volatile. Volatile memory dumps all data when it loses power, such as caches and main 
+    memory sticks, while non-volatile memory holds onto it despite being the lack of power, such as flash memory and hard 
+    drives. <br>
+    <br>
+  
+    <b>Bonus Section - Binary and Hexadecimal</b><br>
+    Many people already know that information used by computers is, "a bunch of 1's and 0's," 
+    but what, exactly, does that mean?<br>
+    <br>
+    Firstly, an explanation of a number system that you probably already know.<br>
+    <br>
+    For the most part, human civilizations use a base-10 numbering system (decimal). This means 
+    that they count with 10 symbols:<br>
+    <br>
+    <center>0, 1, 2, 3, 4, 5, 6, 7, 8, and 9</center><br>
+    <br>
+    After 9, another place value is added.<br>
+    <br>
+    <center><u>1</u>0<sub>10</sub></sub></center><br>
+    <br>
+    Place values can also be thought of as exponents, where the one's place is represented as 
+    10<sup>0</sup>, the ten's place is 10<sup>1</sup>, the one-hundred's place as 10<sup>2</sup>, etc.<br>
+    <br>
+    Computers use a base-2 numbering system (binary) because transistors (and the much older tubes) have two states, 
+    off and on, which can be represented by 0 and 1, respectively. After 1, another place value is added. In 
+    computing terms, each place value is a bit.<br>
+    <br>
+    <center><u>1</u>0<sub>2</sub></sub></center><br>
+    <br>
+    Like with base-10, each place value can be thought of as exponents, where the first place is represented as 
+    2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the fourth as 2<sup>3</sup>, etc. 
+    Because a byte is only eight place values or bits, we really only need to know up to 2<sup>7</sup>, or 128.<br>
+    <br>
+    With this information, converting between binary and decimal is fairly straight forward. 
+    Converting from binary to decimal is as simple as basic addition.<br>
+    <br>
+    For example, let's look at the value 1011<sub>2</sub>. Every place value that contains a 1 can be converted 
+    to its equivilent exponent and then added together to get the decimal equivilant. So, from left to right, 
+    8 in the first place value, nothing in the second, 2 in the third, and 1 in the fourth.<br>
+    <br>
+    <center>1011<sub>2</sub> = 8<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> + 1<sub>10</sub> = 
+    11<sub>10</sub></center><br>
+    <br>
+    As another example:<br>
+    <br>
+    <center>100011<sub>2</sub> = 32<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 0<sub>10</sub> + 2<sub>10</sub> 
+    + 1<sub>10</sub> = 35<sub>10</sub></center><br>
+    <br>
+    Converting from decimal to binary requires a bit more thought, but still just basic arithmetic. This time we'll
+    be subtracting while using base-2 place value exponents as a checklist.<br>
+    <br>
+    For example, 13<sub>10</sub>. The first exponent that can go into 13<sub>10</sub> is 2<sup>3</sup>, or 
+    8<sub>10</sub>. This leaves 5<sub>10</sub> which contains 2<sup>2</sup> or 4<sub>10</sub> and leaves only 
+    1. As such, we can convert these exponents to 1101.<br>
+    <br>
+    <center>13<sub>10</sub> = 2<sup>3</sup> or 8<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 2<sup>0</sup> or 
+    1 = 1101<sub>2</sub></center><br>
+    <br>
+    As another example:<br>
+    <br>
+    <center>213<sub>10</sub> = 2<sup>7</sup> or 128<sub>10</sub> + 2<sup>6</sup> or 64<sub>10</sub> + 2<sup>4</sup> 
+    or 16<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 1 = 11010101<sub>2</sub></center><br>
+    <br>
+    A long stream of 1's and 0's is difficult to work with, however. Thankfully, we can use another base-16 number system 
+    (hexadecimal) to make strings of binary easier to work with. As a base-16 numbering system, hexadeximal uses 16 
+    characters to count.<br>
+    <br>
+    <center>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</center><br>
+    <br>
+    What makes hexadecimal easy is that, like with binary, each place value can be expressed as an exponent of 2, with the 
+    first place value in hexadecimal being 2<sup>0</sup>, the second being 2<sup>4</sup>, the third being 2<sup>8</sup>, and 
+    so on. This corresponds to every four place values in binary being equal to a single place value in hexadecimal. As such 
+    we just need to break the binary number up into four-bit chunks, figure out what that chunk is in decimal, and then 
+    match that to the corresponding hexadecimal character.<br>
+    <br>
+    For example, 1110<sub>2</sub> is the equivilant of 14<sub>10</sub> which is the equivilant of E<sub>16</sub>.<br>
+    <br>
+    As another longer example, 10110010<sub>2</sub> can be broken into two chunks, 1011<sub>2</sub> and 0010<sub>2</sub>, 
+    which are 11<sub>10</sub> and 2<sub>10</sub>, respectively, giving us the hexadecimal number B2<sub>16</sub>.<br>
+    <br>
+    We can go in reverse just as easily.<br>
+    <center>CD<sub>16</sub> = 12<sub>10</sub> | 13<sub>10</sub> = 1100<sub>2</sub> | 1101<sub>2</sub> = 11001101<sub>2</sub>
+    </center><br>
+    <br>
+    Note: While we use base-10 numbers to easily convert hexadecimal to binary, those base-10 numbers are just placeholders 
+    and are not the solution to converting hexadecimal to decimal (i.e. CD<sub>16</sub> is not equal to 1213<sub>10</sub>). 
+    However, they are still the first step to converting to decimal. The second step is to multiply each value by its 
+    respective place value exponent. So in the example of CD<sub>16</sub>, the first value, C<sub>16</sub>, occupies the 
+    2<sup>4</sup> place value and the second value, D<sub>16</sub>, occupies the 2<sup>0</sup> place value. Thus:<br>
+    <br>
+    <center>CD<sub>16</sub> = 12<sub>10</sub> * 2<sup>4</sup> + 13<sub>10</sub> * 2<sup>0</sup> = 192<sub>10</sub> + 
+    13<sub>10</sub> = 205<sub>10</sub></center><br>
+    <br>
+    To convert decimal to hexadecimal, we just need to divide repeatedly by 16, making note of whatever the remainder may 
+    be, until a quotient less than 16 is reached. The remainders and final quotient are switched to their hexadecimal 
+    equivilants, then arranged in the order they were found, with the last quotient being in the last place. This number 
+    is then reversed, resulting in the final hexadecimal number.<br>
+    <br>
+    For example: 4879<sub>10</sub><br>
+    <br>
+    <center>4879 / 16 = 304 with a remainder of 15<sub>10</sub> or F<sub>16</sub></center><br>
+    <br>
+    <center>304 / 16 = 19 with a remainder of 0</center><br>
+    <br>
+    <center> 19 / 16 = 1 with a remainder of 3</center><br>
+    <br>
+    <center>F 0 3 1</center><br>
+    <br>
+    <center>Thus: 4879<sub>10</sub> = 130F<sub>16</sub></center><br>
+    <br>
+    Alternatively, you can just set a calculator to programmer mode and switch between the different bases with ease, 
+    completely ignoring everything that's been said here.
+    </div>
+    
 </body>
 </html>
