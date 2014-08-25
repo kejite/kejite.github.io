@@ -195,8 +195,12 @@
     <br>
     
     <a class="anchor" name="Chapter 3">Chapter 3</a><b>Chapter 3 - Processors</b><br>
-    [PH Text]Stuff about processors. There's a lot of stuff so this is just very basic stuff.<br>
+    The processor is the most important (and as such also the most expensive) component of a computer. It is 
+    essentially the brain of the computer, managing all of the calculations the various programs need it to manage. 
+    It's important to note that this is all the processor does. It may be the brains of the computer, but it's not 
+    exactly smart. Rather, the different memories and programs handle all smartness requirements.<br>
     <br>
+    
   
     <a class="anchor" name="Chapter 4">Chapter 4</a><b>Chapter 4 - Motherboards</b><br>
     The motherboard is a circuit board that connects all of the various components of they system together.
@@ -214,28 +218,29 @@
       <li>Various input/output ports including USB, audio, video, and ethernet</li>
     </ul>
     Motherboards come in a variety of different sizes which are, ordered from largest to smallest, the ATX, microATX,
-    FlexATX, and Mini-ITX. These sizes dictate what size case can be used, with anything being able to fit in a case designed
-    for a full-sized ATX board but with a case designed for a Mini-ITX only being able to use a Mini-ITX board.
-    As long as the motherboard is not too large, any board size can fit into an appropriate case because all standard 
-    motherboards attach to the case via the same layout of screws.<br>
+    FlexATX, and Mini-ITX. These sizes dictate what size case can be used, with anything being able to fit in a case 
+    designed for a full-sized ATX board but with a case designed for a Mini-ITX only being able to use a Mini-ITX 
+    board. As long as the motherboard is not too large, any board size can fit into an appropriate case because all 
+    standard motherboards attach to the case via the same layout of screws.<br>
     <br>
   
     <a class="anchor" name="Chapter 5">Chapter 5</a><b>Chapter 5 - BIOS</b><br>
-    BIOS, which stands for Basic Input/Output System and is also known as device drivers or just drives, is the software 
-    that serves as the bridge between the hardware and the operating system. When the computer is powered on, BIOS is what 
-    gives the processor its first instructions, checks that all components are functioning (Power On Start Test or POST), 
-    allowing the operating system to be loaded and take over.<br>
+    BIOS, which stands for Basic Input/Output System and is also known as device drivers or just drives, is the 
+    software that serves as the bridge between the hardware and the operating system. When the computer is powered on, 
+    BIOS is what gives the processor its first instructions, checks that all components are functioning (Power On 
+    Start Test or POST), and allows the operating system to be loaded and to take over.<br>
+    <br>
     Physically, BIOS is stored on a chip of non-volatile read-only memory (more on this in the next chapter) attached 
-    directly to the motherboard. It is important and perhaps counter-intuitive to note that while the BIOS itself has a 
-    manufacturer, any updates or upgrades must be gotten through the manufacturer of the motherboard. This is because 
+    directly to the motherboard. It is important and perhaps counter-intuitive to note that while the BIOS itself has 
+    a manufacturer, any updates or upgrades must be gotten through the manufacturer of the motherboard. This is because 
     the BIOS chip runs a custom version designed to run specifically with that motherboard.<br>
     <br>
     
     <a class="anchor" name="Chapter 6">Chapter 6 - Memory</a><b>Chapter 6 - Memory</b><br>
-    Memory is what holds onto data and comes in a variety of different types. The first important distinction is whether or 
-    not that memory is volatile or non-volatile. Volatile memory dumps all data when it loses power, such as caches and main 
-    memory sticks, while non-volatile memory holds onto it despite being the lack of power, such as flash memory and hard 
-    drives. <br>
+    Memory is what holds onto data and comes in a variety of different types. The first important distinction is 
+    whether or not that memory is volatile or non-volatile. Volatile memory dumps all data when it loses power, such 
+    as caches and main memory sticks, while non-volatile memory holds onto it despite being the lack of power, such 
+    as flash memory and hard drives. <br>
     <br>
   
     <a class="anchor" name="Bonus">Bonus</a><b>Bonus Section - Binary and Hexadecimal</b><br>
@@ -263,8 +268,8 @@
     <center><u>1</u>0<sub>2</sub></sub></center><br>
     <br>
     Like with base-10, each place value can be thought of as exponents, where the first place is represented as 
-    2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the fourth as 2<sup>3</sup>, etc. 
-    Because a byte is only eight place values or bits, we really only need to know up to 2<sup>7</sup>, or 128.<br>
+    2<sup>0</sup>, the second place as 2<sup>1</sup>, the third place as 2<sup>2</sup>, the fourth as 2<sup>3</sup>, 
+    etc. Because a byte is only eight place values or bits, we really only need to know up to 2<sup>7</sup>, or 128.<br>
     <br>
     With this information, converting between binary and decimal is fairly straight forward. 
     Converting from binary to decimal is as simple as basic addition.<br>
@@ -296,17 +301,17 @@
     <center>213<sub>10</sub> = 2<sup>7</sup> or 128<sub>10</sub> + 2<sup>6</sup> or 64<sub>10</sub> + 2<sup>4</sup> 
     or 16<sub>10</sub> + 2<sup>2</sup> or 4<sub>10</sub> + 1 = 11010101<sub>2</sub></center><br>
     <br>
-    A long stream of 1's and 0's is difficult to work with, however. Thankfully, we can use another base-16 number system 
-    (hexadecimal) to make strings of binary easier to work with. As a base-16 numbering system, hexadeximal uses 16 
-    characters to count.<br>
+    A long stream of 1's and 0's is difficult to work with, however. Thankfully, we can use another base-16 number 
+    system (hexadecimal) to make strings of binary easier to work with. As a base-16 numbering system, hexadeximal 
+    uses 16 characters to count.<br>
     <br>
     <center>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</center><br>
     <br>
-    What makes hexadecimal easy is that, like with binary, each place value can be expressed as an exponent of 2, with the 
-    first place value in hexadecimal being 2<sup>0</sup>, the second being 2<sup>4</sup>, the third being 2<sup>8</sup>, and 
-    so on. This corresponds to every four place values in binary being equal to a single place value in hexadecimal. As such 
-    we just need to break the binary number up into four-bit chunks, figure out what that chunk is in decimal, and then 
-    match that to the corresponding hexadecimal character.<br>
+    What makes hexadecimal easy is that, like with binary, each place value can be expressed as an exponent of 2, with 
+    the first place value in hexadecimal being 2<sup>0</sup>, the second being 2<sup>4</sup>, the third being 
+    2<sup>8</sup>, and so on. This corresponds to every four place values in binary being equal to a single place 
+    value in hexadecimal. As such we just need to break the binary number up into four-bit chunks, figure out what 
+    that chunk is in decimal, and then match that to the corresponding hexadecimal character.<br>
     <br>
     For example, 1110<sub>2</sub> is the equivilant of 14<sub>10</sub> which is the equivilant of E<sub>16</sub>.<br>
     <br>
@@ -314,22 +319,24 @@
     which are 11<sub>10</sub> and 2<sub>10</sub>, respectively, giving us the hexadecimal number B2<sub>16</sub>.<br>
     <br>
     We can go in reverse just as easily.<br>
-    <center>CD<sub>16</sub> = 12<sub>10</sub> | 13<sub>10</sub> = 1100<sub>2</sub> | 1101<sub>2</sub> = 11001101<sub>2</sub>
+    <center>CD<sub>16</sub> = 12<sub>10</sub> | 13<sub>10</sub> = 1100<sub>2</sub> | 1101<sub>2</sub> = 
+    11001101<sub>2</sub>
     </center><br>
     <br>
-    Note: While we use base-10 numbers to easily convert hexadecimal to binary, those base-10 numbers are just placeholders 
-    and are not the solution to converting hexadecimal to decimal (i.e. CD<sub>16</sub> is not equal to 1213<sub>10</sub>). 
-    However, they are still the first step to converting to decimal. The second step is to multiply each value by its 
-    respective place value exponent. So in the example of CD<sub>16</sub>, the first value, C<sub>16</sub>, occupies the 
-    2<sup>4</sup> place value and the second value, D<sub>16</sub>, occupies the 2<sup>0</sup> place value. Thus:<br>
+    Note: While we use base-10 numbers to easily convert hexadecimal to binary, those base-10 numbers are just 
+    placeholders and are not the solution to converting hexadecimal to decimal (i.e. CD<sub>16</sub> is not equal to 
+    1213<sub>10</sub>). However, they are still the first step to converting to decimal. The second step is to 
+    multiply each value by its respective place value exponent. So in the example of CD<sub>16</sub>, the first value, 
+    C<sub>16</sub>, occupies the 2<sup>4</sup> place value and the second value, D<sub>16</sub>, occupies the 
+    2<sup>0</sup> place value. Thus:<br>
     <br>
     <center>CD<sub>16</sub> = 12<sub>10</sub> * 2<sup>4</sup> + 13<sub>10</sub> * 2<sup>0</sup> = 192<sub>10</sub> + 
     13<sub>10</sub> = 205<sub>10</sub></center><br>
     <br>
-    To convert decimal to hexadecimal, we just need to divide repeatedly by 16, making note of whatever the remainder may 
-    be, until a quotient less than 16 is reached. The remainders and final quotient are switched to their hexadecimal 
-    equivilants, then arranged in the order they were found, with the last quotient being in the last place. This number 
-    is then reversed, resulting in the final hexadecimal number.<br>
+    To convert decimal to hexadecimal, we just need to divide repeatedly by 16, making note of whatever the remainder 
+    may be, until a quotient less than 16 is reached. The remainders and final quotient are switched to their 
+    hexadecimal equivilants, then arranged in the order they were found, with the last quotient being in the last 
+    place. This number is then reversed, resulting in the final hexadecimal number.<br>
     <br>
     For example: 4879<sub>10</sub><br>
     <br>
