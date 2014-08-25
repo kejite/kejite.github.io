@@ -252,7 +252,7 @@
     <br>
     A final thing to look at is the cache, a special type of memory that functions as an intermediary between the processor 
     and the main memory in order to let the processor run as fast as it can. In <i>Upgrading and Repairing PCs</i>, this 
-    subject is discussed in chapter three. For the purposes of this page, however, the discussion on caches is being \
+    subject is discussed in chapter three. For the purposes of this page, however, the discussion on caches is being 
     rolled into chapter six.<br>
     <br>
     All of these variables make comparing processors difficult. As a result, benchmarks are used run scripts to create an 
@@ -323,8 +323,18 @@
     data once per clock cycle, the memory moves data twice per cycle. The three is just the designation of the current 
     generation.<br>
     <br>
-    SRAM is the processor's caches.
-    
+    SRAM is the processor's caches, usually integrated directly onto the processor die. These act as a second stage of 
+    memory in between the main memory and the processor in order to compensate for the main memory not being as fast as 
+    the processor. Cache memory is also smarter than main memory, holding onto data that the processor is most likely to 
+    need rather than anything it could need. However, the cache does not always correctly guess what the processor will 
+    need, forcing the processor to get that information from the slower main memory. This is known as a cache miss and is 
+    fairly rare (90% of the time the cache does its job correctly). Regardless of rarity, the processor has three levels 
+    of cache memory to prevent the likelihood of a miss, L1, L2, and L3. Each level of cache memory has data the processor 
+    is likely to need and, in the event L1 misses, L2 will probably have the correct piece of data. In the event L2 misses, 
+    L3 will likely have the information needed. If all three miss then something went horribly wrong and the processor 
+    must consult the slow main memory. In the case of multicore processors, each processor has its own L1 and L2 caches 
+    while sharing a single L3 cache.<br>
+    <br>
     
     
     <a class="anchor" name="Chapter 7">Chapter 7</a><b>Chapter 7 - ATA/IDE Interface</b><br>
