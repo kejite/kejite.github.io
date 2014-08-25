@@ -109,7 +109,7 @@
     control grid (OFF). These were large and used a lot of power, resulting in high costs and overheating. To fix this 
     problem, the transistor was invented in 1947 by John Bardeen, Walter Brattain, and Willian Shockley. Transistors 
     function on the same basic idea as a vacuum tube but all components are replaced by silicon mixed with certain 
-    impurities (or <i>doped</i>) to create semiconductors. P-type, or positive due to a lack of free electrons, 
+    impurities (or <i>doped</i>) and a wire to create semiconductors. P-type, or positive due to a lack of free electrons, 
     silicon is doped with boron and N-type, or negative due to an excess of free electrons, silicon is doped with 
     phosphorous. Normally these two types of silicon do not share electrons (OFF) but the application of an electric 
     charge allows electrons to flow (ON), much like a vacuum tube. Unlike a vacuum tube, a transistor is significantly 
@@ -213,7 +213,21 @@
     calculator, ran at a clock speed of 740KHz whereas a modern Intel i7 4790 runs at up to 4.40 GHz (6000x faster).<br>
     <br>
     A second number to look at, though rarely advertised or even kept secret, is how many transistors there are in a given 
-    processor.
+    processor. As detailed in the first chapter, a transistor is two types of silicon semiconductors and a wire being used 
+    together as an ON/OFF switch. Using these switches as 1's and 0's the processor is able to use data to do whatever it 
+    needs to do. Naturally, more transistors means a greater ability to do math. Likewise, being able to put more 
+    transistors closer together allows the processor to take up less space. To refer again to the first processor, the 
+    Intel 4004 had a transistor count of 2300 spaced 10 microns (1 micron being one one-millionth of a meter) apart while 
+    modern processors have transistors counts in the billions spaced 22 nanometers (1 nanometer being one one-billionth 
+    of a meter) apart.<br>
+    <br>
+    Similar to transistor count, another important value is the width of the data (I/O) bus, address bus, and internal 
+    registries. The data bus is what allows data to move into and out of the processor (there is often more than one), 
+    the address bus refers to the memory location of a piece of data, and internal registries the amount of information 
+    the processor can work with at one time. In a modern processor, the data bus is 64 bits wide, the address is 40 bits 
+    wide, and new processors have both 32 and 64 bit registries. The Intel 4004 had a 4 bit data bus.<br>
+    <br>
+    
     
   
     <a class="anchor" name="Chapter 4">Chapter 4</a><b>Chapter 4 - Motherboards</b><br>
@@ -226,7 +240,7 @@
       <li>DIMM slots for memory sticks</li>
       <li>Expansion slots for things like video, sound, and network cards</li>
       <li>The socket for the hard disk drive or solid state drive</li>
-      <li>The socket for the power supply</li>
+      <li>The sockets for the power supply cables</li>
       <li>The socket for the optical drive</li>
       <li>The socket(s) for the fan(s)
       <li>Various input/output ports including USB, audio, video, and ethernet</li>
