@@ -271,10 +271,10 @@
       <li>The BIOS chip(s) and battery</li>
       <li>DIMM slots for memory sticks</li>
       <li>Expansion slots for things like video, sound, and network cards</li>
-      <li>The socket for the hard disk drive or solid state drive</li>
+      <li>The sockets for the hard disk and solid state drives</li>
       <li>The sockets for the power supply cables</li>
-      <li>The socket for the optical drive</li>
-      <li>The socket(s) for the fan(s)
+      <li>The sockets for the optical drives</li>
+      <li>The sockets for the fans and other cooling systems</li>
       <li>Various input/output ports including USB, audio, video, and ethernet</li>
     </ul>
     Motherboards come in a variety of different sizes which are, ordered from largest to smallest, the ATX, microATX,
@@ -305,14 +305,26 @@
     memory and hard drives. As mentioned in the previous chapter, BIOS is an example of something stored onto flash 
     memory and hard drives will be described in fuller detail in chapter nine. This chapter will focus on <br>
     <br>
-    Volatile memory is generally what is meant when somebody is talking about memory and can itself be divided into two 
-    categories, dynamic random-access memory (DRAM) and static random-access memory (SRAM), with "random-access" referring 
-    to the fact that the date held within can be accessed in any random order (ROM and hard drives are also RAM, but 
-    because of their non-volatility they are usually kept to their own seperate designation). Dynamic RAM is dense, 
-    meaning that is able to store a lot of data in a small space, as well as cheap, however it is also transfers data 
-    quite slowly. By contrast, static RAM is fast, but also takes up a large amount of space and is expensive. In order 
-    to work around these strengths and weaknesses, DRAM and SRAM both fulfill different roles in a computer.<br>
+    Volatile memory can itself be divided into two categories, dynamic random-access memory (DRAM) and static 
+    random-access memory (SRAM), with "random-access" referring to the fact that the date held within can be accessed 
+    in any random order (ROM and hard drives are also RAM, but because of their non-volatility they are usually kept to 
+    their own seperate designation). Dynamic RAM is dense, meaning that is able to store a lot of data in a small space, 
+    as well as cheap, however it is also transfers data quite slowly. By contrast, static RAM is fast, but also takes up 
+    a large amount of physical space and is expensive. In order to work around these strengths and weaknesses, DRAM and 
+    SRAM both fulfill different roles in a computer.<br>
     <br>
+    DRAM is generally what people are referring to when they mention memory and is a set of memory chips on its own board 
+    plugged into the motherboard via DIMM slots. This acts as the first set of memory, drawing a copy of the information 
+    the processor will need from its permanent location. The DRAM used as main memory in current computers is called 
+    DDR3 SDRAM (DDR4 will be available soon, though not likely to be cost efficient any time soon). The S in SDRAM refers 
+    to the memory running synchonized with the memory bus. Prior to this change, DRAM ran as quickly as it could which 
+    sounds nice, but really it just results in more time waiting. Synchronizing the memory to the bus allows the 
+    everything to function at the same time, increasing speeds. DDR, or double data rate, means that instead of transfering 
+    data once per clock cycle, the memory moves data twice per cycle. The three is just the designation of the current 
+    generation.<br>
+    <br>
+    SRAM is the processor's caches.
+    
     
     
     <a class="anchor" name="Chapter 7">Chapter 7</a><b>Chapter 7 - ATA/IDE Interface</b><br>
