@@ -99,7 +99,7 @@ a:hover{
 #entrance{
   color:white;
   -webkit-animation-name: entrance;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 2s;
   -webkit-animation-timing-function: ease;
   -webkit-animation-iteration-count: 1;	
   -webkit-animation-direction: normal;
@@ -107,7 +107,7 @@ a:hover{
   -webkit-animation-play-state: running;
   -webkit-animation-fill-mode: forwards;
   animation-name: entrance;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease;
   animation-iteration-count: 1;	
   animation-direction: normal;
