@@ -98,9 +98,6 @@ animation-fill-mode: forwards;
 }
 
 #entrance{
-color:white;
-padding:5px;
-font-family:sans-serif;
 -webkit-animation-name: entrance;
 -webkit-animation-duration: 3s;
 -webkit-animation-timing-function: ease;
