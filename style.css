@@ -56,11 +56,14 @@ background:black;
 }
 
 #moveit h2{
-animation:foo 3s;
-animation-iteration-count:infinite;
 color:white;
 padding:5px;
 font-family:sans-serif;
+-webkit-animation:foo 3s;
+-webkit-animation-iteration-count:infinite;
+-webkit-transform: translate3d(0px, 0px, 0px);
+animation:foo 3s;
+animation-iteration-count:infinite;
 transform: translate3d(0px, 0px, 0px);
 }
 
