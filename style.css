@@ -106,7 +106,7 @@ a:hover{
   -webkit-animation-delay: 0;
   -webkit-animation-play-state: running;
   -webkit-animation-fill-mode: forwards;
-  animation-name: foo;
+  animation-name: entrance;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;	
