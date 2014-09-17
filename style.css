@@ -64,7 +64,7 @@ font-family:sans-serif;
 transform: translate3d(0px, 0px, 0px);
 }
 
-@-webkit-keyframes foo{
+@keyframes foo{
 0%{color:#BE81F7;transform: translate3d(0px, 0px, 0px);}
 16%{color:#FF0040;}
 32%{color:#FE642E;}
