@@ -78,14 +78,11 @@ animation-fill-mode: forwards;
 }
 
 @keyframes foo, @-webkit-keyframes foo{
-0%{color:#BE81F7;transform: translate3d(0px, 0px, 0px);-webkit-transform: translate3d(0px, 0px, 0px);}
+0%{color:#BE81F7;}
 16%{color:#FF0040;}
 32%{color:#FE642E;}
-48%{color:#FFFF00;transform: translate3d(10px, 0px, 0px);-webkit-transform: translate3d(10px, 0px, 0px);}
+48%{color:#FFFF00;}
 64%{color:#00FF40;}
 80%{color:#2ECCFA:}
-100%{color:#BE81F7;
-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-}
+100%{color:#BE81F7;}
 }
