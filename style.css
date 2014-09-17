@@ -78,33 +78,77 @@ animation-fill-mode: forwards;
 }
 
 @keyframes foo{
-0%{color:#BE81F7
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);;}
+0%{color:#BE81F7}
 16%{color:#FF0040;}
 32%{color:#FE642E;}
-48%{color:#FFFF00;
-  -webkit-transform: scale3d(1.05, 1.05, 1.05);
-  transform: scale3d(1.05, 1.05, 1.05);}
+48%{color:#FFFF00;}
 64%{color:#00FF40;}
 80%{color:#2ECCFA:}
-100%{color:#BE81F7;
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);}
+100%{color:#BE81F7;}
 }
 
 @-webkit-keyframes foo{
-0%{color:#BE81F7
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);;}
+0%{color:#BE81F7}
 16%{color:#FF0040;}
 32%{color:#FE642E;}
-48%{color:#FFFF00;
-  -webkit-transform: scale3d(1.05, 1.05, 1.05);
-  transform: scale3d(1.05, 1.05, 1.05);}
+48%{color:#FFFF00;}
 64%{color:#00FF40;}
 80%{color:#2ECCFA:}
-100%{color:#BE81F7;
+100%{color:#BE81F7;}
+}
+
+#entrance{
+color:white;
+padding:5px;
+font-family:sans-serif;
+-webkit-animation-name: entrance;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: ease;
+-webkit-animation-iteration-count: 1;	
+-webkit-animation-direction: normal;
+-webkit-animation-delay: 0;
+-webkit-animation-play-state: running;
+-webkit-animation-fill-mode: forwards;
+animation-name: foo;
+animation-duration: 3s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;	
+animation-direction: normal;
+animation-delay: 0;
+animation-play-state: running;
+animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes entrance {
+  0% {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);}
+            transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes entrance {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
 }
