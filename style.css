@@ -59,12 +59,14 @@ background:black;
 color:white;
 padding:5px;
 font-family:sans-serif;
--webkit-animation:foo 3s;
--webkit-animation-iteration-count:infinite;
--webkit-transform: translate3d(0px, 0px, 0px);
-animation:foo 3s;
-animation-iteration-count:infinite;
-transform: translate3d(0px, 0px, 0px);
+animation-name: foo;
+animation-duration: 3s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;	
+animation-direction: normal;
+animation-delay: 0;
+animation-play-state: running;
+animation-fill-mode: forwards;
 }
 
 @keyframes foo{
