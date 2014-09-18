@@ -301,7 +301,7 @@
     
     <a class="anchor" name="Chapter 8">Chapter 8</a><b>Chapter 8 - Magnetic Storage Principles</b><br>
     Hard disk drives are the most common means of storing large amounts of information permanently or semi-permanently. The 
-    core components of a hard disk drive are a circular platter (although modern hard drives have multiple platters) and a 
+    core components of a hard disk drive are a spinning circular platter (although modern hard drives have multiple platters) and a 
     U-shaped read/write head held above the platter. Platters are composed of a substrate made of aluminum or glass and 
     ceramic with a layer of magnetizable material on top while read/write heads are made of conductive metal. Hard drives 
     use the platter and read/write head along with the physics of electromagnetism to store data. The same principle of 
@@ -337,8 +337,71 @@
     direction. Once reaching the bottom, the field then goes back up towards the head using areas of the platter with an 
     “upwards” polarity as the path of least resistance.</i><br>
     <br>
+    The head writes by having a voltage applied to it which then creates a magnetic field in a given direction, known 
+    as flux, which the particles in that area of the platter are then aligned with. When the voltage being applied to 
+    the head changes, so does the flux being generated and the platter particles match the new polarity. This change 
+    is a flux reversal or flux transition and these changes occur in specific areas of the platter known as bit or 
+    transition cells, the location of which is dependent upon the speed of the platter’s spinning. Because the 
+    manipulation of flux is fairly analog (transitions do not happen instantaneously and so the edges of an area of 
+    flux are “fuzzy”), these transitions are what really matter when it comes to reading data. Writing is a continuous 
+    application of one of two voltages. Reading, on the other hand, is just a pulse sent by the head when it comes 
+    across a transition that matches whether or not that transition is from positive to negative or vice-versa.<br>
+    <br>
+    Relying on analog flux transitions instead of just digital on/off makes converting the information between the 
+    binary that the computer uses and the platter a bit complicated. Thankfully, because the platter spins at a known 
+    pace and because transitions are located in known areas, how often transitions occur can be read as a string of 
+    transitions and not-transitions. Using encoding methods, this string can then be converted into binary (and binary 
+    data can be written by the same idea). There have been three types of encoding methods used for this: Frequency 
+    modulation, modified frequency modulation, and run length limited.<br>
+    <br>
+    Frequency modulation is the simplest method as well as the oldest, being in use until the late 1970’s. In frequency 
+    modulation all bits have a transition between them. Transitions also occur if the bit is a 1. If it is a 0, there 
+    is no transition. Thus the string 0 1 0 1 1 0 0 0 becomes TN TT TN TT TT TN TN TN. This is very inefficient.<br>
+    <br>
+    Modified frequency modulation was an attempt to increase the efficiency of frequency modulation. Transitions still 
+    occur on every 1, however transitions between bits now only occurs when a 0 follows another 0. As such, 0 1 0 1 1 0 
+    0 0 becomes TN NT NN NT NT NN TN TN.<br>
+    <br>
+    Run length limited is the encoding method used today by virtually all hard drives available and is twice as 
+    efficient as MFM (and three times as efficient as FM). Instead of encoding each bit individually, run length 
+    limited assigns specific groups of data values a specific flux encoding. Unfortunately, this makes reading this 
+    information as a human a bit harder. The following is all values in the most common form of RLL.<br>
     
+    <table>
+    	<tr>
+    	    <td>10</td>
+	    <td>NTNN</td>
+	</tr>
+	<tr>
+	    <td>11</td>
+	    <td>TNNN</td>
+	</tr>
+	<tr>
+	    <td>000</td>
+	    <td>NNNTNN</td>
+	</tr>
+	<tr>
+	    <td>010</td>
+	    <td>TNNTNN</td>
+	</tr>
+  	<tr>
+    	    <td>011</td>
+    	    <td>NNTNNN</td>
+  	</tr>
+  	<tr>
+	    <td>0010</td>
+	    <td>NNTNNTNN</td>
+	</tr>
+	<tr>
+	    <td>0011</td>
+	    <td>NNNNTNNN</td>
+	</tr>
+    </table><br>
     
+    With these values, the binary string 01011000 is broken into 010, 11, and 000, resulting in TNNTNN, TNNN, and 
+    NNNTNN or TNNTNNTNNNNNNTNN altogether.<br>
+
+
     
     
     <a class="anchor" name="Chapter 9">Chapter 9</a><b>Chapter 9 - Hard Disk Storage</b><br>
