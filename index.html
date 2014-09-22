@@ -295,7 +295,7 @@
     
     
     <a class="anchor" name="Chapter 7">Chapter 7</a><b>Chapter 7 - ATA/IDE Interface</b><br>
-    <i>[PH Text] Stuffffff</i><br>
+    ATA and IDE cables are used to move data from drives.<br>
     <br>
     
     
@@ -446,12 +446,46 @@
     
     
     <a class="anchor" name="Chapter 9">Chapter 9</a><b>Chapter 9 - Hard Disk Storage</b><br>
-    <i>[PH Text] Stuffffff</i><br>
+    Data stored on hard disk drives are stored three-dimensionally based on where said data is on the disk and which disk. 
+    Which disk is simple since they are all in a stack, with the main complication being that data is stored on both sides 
+    of a given disk. At the same time, though, double-sided read/write heads are between each platter, bringing the choice of 
+    disk back down to being simple. These heads are all attached to arms which are themselves attached to an actuator, allowing 
+    them to rotate towards and away from the center of the platters. While the drive is not in use, heads rest on the center 
+    of the platter which is unused for storage due to being too small around. With the drive in use, read/write heads hover 
+    over the spinning platters using a small cushion of air between the head and platter as support to prevent the two coming 
+    into direct contact.<br>
     <br>
-    MOAR DIAGRAM!<br>
+    For the other two dimensions, each platter is divided into tracks and sectors. Tracks are concentric rings and sectors are 
+    wedges or arcs. The moving arm and spinning disks allow read/write heads to cover all tracks and sectors. Tracks and 
+    sectors can be organized in two ways, standard recording and zoned recording. Standard recording is simple, having the 
+    same number of sectors for every track. This is, however, very inefficient since the outer area of the platter can hold 
+    significantly more information than the inner areas. Zoned recording fixes this inefficiency by dividing the platter into 
+    zones based on tracks, increasing the number of sectors per track in a given zone as the tracks move out from the center. 
+    For example, tracks 1-5 may have 10 sectors per track and tracks 6-10 may have 13 (arbitrary numbers are arbitrary). A 
+    side-effect of zoned recording is that, because the number of sectors varies, data transfer speeds also vary, being fastest 
+    in the outer tracks and slowest in the inner tracks. As a result, the vast majority of modern disk drives report their 
+    transfer rates in terms of minimum and maximum. All modern drives use zoned recording.<br>
+    <br>
+    For a more visual representation of the difference between recording methods, see this diagram:<br>
     <p align="center"><img src="magneticorganizationdiagram.svg" alt="A representation of how a hard disk platter is divided 
     and organized." style="width:75%; height:75%;"></p><br>
-    
+    This way in which tracks and sectors are physically organized at the factory is referred to as low-level formatting. High-
+    level formatting is the creation of the file system structures that the operating systems needs in order to manage files 
+    and data on a disk. This is not a physical change, but rather a logical one. Disk drives can be further organized by the 
+    use of partitions allowing the use of multiple operating systems or file systems. A HDD will always have at least one 
+    partition and supports the creation of more. Different file systems include:<br>
+    <ul>
+    	<li><b>FAT (File Allocation Table)</b>, supported originally by DOS and Windows 9x/ME, is the default file system 
+    	for flash or other removable drives by Windows 2000 and later. This file system is 12- or 16-bit, resulting in a 
+    	maximum volume size of 2GiB.</li>
+    	<li><b>FAT32 (FAT, 32-bit)</b>, supported since Windows 95 OSR2, uses 32-bit numbers, resulting in a 2TiB maximum 
+    	volume size (although 32GiB is recommended) and a maximum file size of 4 GiB.</li>
+    	<li><b>exFAT (FAT64)</b>, supported since Windows XP, uses 64-bit architecture, resulting in a maximum recommended 
+    	volume and file size of 512TiB.</li>
+    	<li><b>NTFS</b> is the native file system for Windows NT and later (making it the most common) supports volumes and 
+    	files up to a theoretical 16EiB (which is a fairly ridiculously large number).</li>
+    </ul>
+    <br>
     
     <a class="anchor" name="Chapter 10">Chapter 10</a><b>Chapter 10 - Flash and Removable Storage</b><br>
     <i>[PH Text] Stuffffff</i><br>
