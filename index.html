@@ -301,11 +301,18 @@
     power, reduced efficiency, and increased the time needed to manipulate data. IDE eliminated these problems by integrating 
     the drive and controller together into one component.<br>
     <br>
-    PATA was the common standard for many years and used a 40-pin connector. Generally, this connector was keyed so that it 
-    would only plug in one way (i.e. not upside-down) by the removal of the twentieth pin and blocking the hole where the 
-    twentieth pin would enter if it existed. Some connectors also had bumps on the top to further reduce the chance of plugging 
-    in backwards. Each pin corresponds to a specific thing, and it would be annoying to list all 40. However, pins 3-18 were 
-    assigned to data bits and pins 33, 35, and 36 were assigned to address bits.
+    PATA was the common standard for many years and uses a 40-pin connector. Generally, this connector is keyed so that it 
+    will only plug in one way (i.e. not upside-down) by the removal of the twentieth pin and blocking the hole where the 
+    twentieth pin would enter if it existed. Some connectors also have bumps on the top to further reduce the chance of plugging 
+    in backwards. Each pin corresponds to a specific thing, and it would be annoying to list all 40. However, pins 3-18 are 
+    assigned to data bits and pins 33, 35, and 36 are assigned to address bits. Additional pins on the side can exist along with 
+    a jumper (piece of plasic that blocks two pins) in order to designate master/slave drives, a means of allowing multiple 
+    drives to connect to the same cable by allowing the system to only communicate to a specific drive if it needs to. 
+    As for the cable itself, that comes in two varieties, 40-conductors and 80-conductors. Both use the 40-pin connector, 
+    so all of the 40 extra conductors in the 80-conductor variety are grounds. The advantage of this is a reduction of noise 
+    and interfence, which is needed when running at higher speeds. The standard limit for PATA cable length is 18 inches, 
+    although 80-conductor cables work fine up to 27 inches and both types of cables are available at up to 36 inches (going 
+    longer than the standard length is not recommended).<br>
     
     
     <a class="anchor" name="Chapter 8">Chapter 8</a><b>Chapter 8 - Magnetic Storage Principles</b><br>
