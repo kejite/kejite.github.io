@@ -297,8 +297,15 @@
     <a class="anchor" name="Chapter 7">Chapter 7</a><b>Chapter 7 - ATA/IDE Interface</b><br>
     IDE (Integrated Drive Electronics) cables are used to move data from drives to the motherboard, with the more official 
     name ATA (AT Attachment). This can be split between the now obsolete Parallel ATA (PATA) and the modern Serial ATA 
-    (SATA).<br>
+    (SATA). Prior to IDE, the drive and drive's controller were two seperate components, a design that required more cables, 
+    power, reduced efficiency, and increased the time needed to manipulate data. IDE eliminated these problems by integrating 
+    the drive and controller together into one component.<br>
     <br>
+    PATA was the common standard for many years and used a 40-pin connector. Generally, this connector was keyed so that it 
+    would only plug in one way (i.e. not upside-down) by the removal of the twentieth pin and blocking the hole where the 
+    twentieth pin would enter if it existed. Some connectors also had bumps on the top to further reduce the chance of plugging 
+    in backwards. Each pin corresponds to a specific thing, and it would be annoying to list all 40. However, pins 3-18 were 
+    assigned to data bits and pins 33, 35, and 36 were assigned to address bits.
     
     
     <a class="anchor" name="Chapter 8">Chapter 8</a><b>Chapter 8 - Magnetic Storage Principles</b><br>
