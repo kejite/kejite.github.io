@@ -315,10 +315,15 @@
     longer than the standard length is not recommended).<br>
     <br>
     Unfortunately, PATA was not able to keep up with advancing technology and as such was replaced by SATA. SATA cables have 
-    their own ports, but are backwards compatible with things designed to work with PATA. Standard SATA cables are 7 conductors 
-    (four signal and three ground) and transfer data one bit at a time. A different type of SATA, SATA Express, uses a wider 
-    18-conductor cable to transfer two bits at a time by plugging into a PCIe slot. A SATA Express cable cannot plug into a 
-    normal SATA connector, however two standard SATA cables can be plugged into a single SATA Express connector. 
+    their own ports, but are backwards compatible with things designed to work with PATA. Standard SATA cables can be up to 1 
+    meter in length with 7 conductors (four signal and three ground) and transfer data one bit at a time. A different type of 
+    SATA, SATA Express, uses a wider 18-conductor cable to transfer two bits at a time by plugging into a PCIe slot. A SATA 
+    Express cable cannot plug into a normal SATA connector, however two standard SATA cables can be plugged into a single SATA 
+    Express connector. Rather than just sending 1's and 0's as they are, SATA cables use an encoding scheme called 8b/10b to 
+    encode and decode data. This is a type of run length limited encoding called RLL 0,4 (more on run length limite at the end 
+    of the next chapter) that ensure that there are never more than four 1's or 0's transmitted in a row and that there are 
+    never more than six or fewere than four 0's or 1's in a single encoded 10-bit character. These frequent changes result in 
+    a more balanced and steady stream of data flowing through the cable, making it more reliable.
     
     
     <a class="anchor" name="Chapter 8">Chapter 8</a><b>Chapter 8 - Magnetic Storage Principles</b><br>
