@@ -509,7 +509,12 @@
     between the programs and hardware for Windows systems. Since Vista, however, audio has had its own dedicated API called 
     Core Audio.<br>
     <br>
-    
+    As an analog wave, sound needs to be converted into and out of digital data. This process is known as sampling. During 
+    sampling, the system takes snapshots of the soundwave at regular intervals and records the frequency and amplitude of 
+    the wave at that particular point in time, assigning a value to that specific snapshot. The collection of those 
+    snapshots can then be played back to create a new soundwave that is, hopefully, the same as the original. The more 
+    frequently these snapshots are taken, the more accurate the end wave can be, though this also increases the amount of 
+    disk space required to store it.
     <br>
     The quality of sound produced by a computer can be evaluated based on three criteria which are frequency response, 
     harmonic distortion, and signal-to-noise ratio. Frequency responce refers to the "range in which an audio system can 
